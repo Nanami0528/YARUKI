@@ -84,12 +84,6 @@
                                     <action selector="start" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1dD-8k-WLz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０１：２０：３２" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ4-Nu-b6D">
-                                <rect key="frame" x="87" y="373" width="152" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あと２：３０" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez0-H8-GLG">
                                 <rect key="frame" x="65" y="439" width="197" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,9 +174,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="time1" destination="d9c-f0-5MJ" id="E43-wK-exs"/>
-                        <outlet property="time2" destination="SR9-Sf-mUk" id="ZjH-NP-8Qw"/>
-                        <outlet property="time3" destination="fzW-6l-RYQ" id="01C-ZM-Itk"/>
+                        <outlet property="hourLabel" destination="d9c-f0-5MJ" id="toY-KB-Oca"/>
+                        <outlet property="minLabel" destination="SR9-Sf-mUk" id="qhD-GE-Bss"/>
+                        <outlet property="secLabel" destination="fzW-6l-RYQ" id="a47-1A-obE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

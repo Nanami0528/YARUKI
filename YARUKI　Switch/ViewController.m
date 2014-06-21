@@ -19,10 +19,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    count = 0.0;
-    time1.text = [NSString stringWithFormat:@"%2d",count] ;
-    time2.text = [NSString stringWithFormat:@"%2d",count] ;
-    time3.text = [NSString stringWithFormat:@"%2d",count] ;
+    min = 0.0;
+    sec= 0.0;
+    hour = 0.0;
+    minLabel.text = [NSString stringWithFormat:@"%2d",min] ;
+    secLabel.text = [NSString stringWithFormat:@"%2d",sec] ;
+    hourLabel.text = [NSString stringWithFormat:@"%2d",hour] ;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,7 +38,7 @@
 {
     if (![timer isValid] )//タイマーが動いていない場合
     {
-        timer = [NSTimer scheduledTimerWithTimeInterval:0.01
+        timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                  target:self
                                                selector:@selector(up)
                                                userInfo:nil
@@ -56,10 +58,31 @@
     
 -(void)up
 {
+    NSLog(@"sec:%d",sec);
+    sec = sec+1;
+    secLabel.text = [NSString stringWithFormat:@"%.2d",sec];
+    
+    if(sec == 60){
+        sec = sec-60;
+        min = min+1;
+        minLabel.text = [NSString stringWithFormat:@"%.2d",min];
 
+        NSLog(@"min:%d",min);
+    }
+    
+    if(min==60){
+        min = min-60;
+        hour = hour+1;
+        hourLabel.text = [NSString stringWithFormat:@"%.2d",hour];
 
-    count =count + 0.01;
-    countLabel.text = [NSString stringWithFormat:@"%.2d",count];
+        
+          NSLog(@"hour:%d",hour);
+    }
+        
+//    count =count + 0.01;
+//    time1.text = [NSString stringWithFormat:@"%.2d",count];
+    
+    
 }
 
 

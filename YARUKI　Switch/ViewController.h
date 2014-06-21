@@ -11,15 +11,15 @@
 @interface ViewController : UIViewController
 {
     
-    IBOutlet UILabel *countLabel ;//←後で消す
+
     
-    int count;
-    int count1;
-    int count2;
+    int min;
+    int sec;
+    int hour;
     
-    IBOutlet UILabel *time1;
-    IBOutlet UILabel *time2;
-    IBOutlet UILabel *time3;
+    IBOutlet UILabel *minLabel;
+    IBOutlet UILabel *secLabel;
+    IBOutlet UILabel *hourLabel;
     
     
     
