@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YARUKI&#x3000;Switch.xcodeproj">
+      location = "self:YARUKI.xcodeproj">
    </FileRef>
 </Workspace>

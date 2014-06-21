@@ -9,5 +9,33 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+    IBOutlet UILabel *countLabel ;//←後で消す
+    
+    int count;
+    int count1;
+    int count2;
+    
+    IBOutlet UILabel *time1;
+    IBOutlet UILabel *time2;
+    IBOutlet UILabel *time3;
+    
+    
+    
+    
+    
+    NSTimer *timer;
+
+    
+ }
+
+
+-(IBAction)start;
+
+
+
+-(void)up;
+
 
 @end

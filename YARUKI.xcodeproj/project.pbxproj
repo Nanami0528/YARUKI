@@ -34,23 +34,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9C42BEA1942FD18001CF2DC /* YARUKI　Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YARUKI　Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C42BEA1942FD18001CF2DC /* YARUKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YARUKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42BED1942FD18001CF2DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E9C42BF11942FD18001CF2DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E9C42BF51942FD18001CF2DC /* YARUKI　Switch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YARUKI　Switch-Info.plist"; sourceTree = "<group>"; };
+		E9C42BF51942FD18001CF2DC /* YARUKI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YARUKI-Info.plist"; sourceTree = "<group>"; };
 		E9C42BF71942FD18001CF2DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9C42BF91942FD18001CF2DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9C42BFB1942FD18001CF2DC /* YARUKI　Switch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YARUKI　Switch-Prefix.pch"; sourceTree = "<group>"; };
+		E9C42BFB1942FD18001CF2DC /* YARUKI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YARUKI-Prefix.pch"; sourceTree = "<group>"; };
 		E9C42BFC1942FD18001CF2DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9C42BFD1942FD18001CF2DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E9C42C001942FD18001CF2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9C42C021942FD18001CF2DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E9C42C031942FD18001CF2DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E9C42C051942FD18001CF2DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E9C42C0B1942FD18001CF2DC /* YARUKI　SwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YARUKI　SwitchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C42C0B1942FD18001CF2DC /* YARUKITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YARUKITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42C0C1942FD18001CF2DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E9C42C141942FD18001CF2DC /* YARUKI　SwitchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YARUKI　SwitchTests-Info.plist"; sourceTree = "<group>"; };
+		E9C42C141942FD18001CF2DC /* YARUKITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YARUKITests-Info.plist"; sourceTree = "<group>"; };
 		E9C42C161942FD18001CF2DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9C42C181942FD18001CF2DC /* YARUKI_SwitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YARUKI_SwitchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +92,8 @@
 		E9C42BEB1942FD18001CF2DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9C42BEA1942FD18001CF2DC /* YARUKI　Switch.app */,
-				E9C42C0B1942FD18001CF2DC /* YARUKI　SwitchTests.xctest */,
+				E9C42BEA1942FD18001CF2DC /* YARUKI.app */,
+				E9C42C0B1942FD18001CF2DC /* YARUKITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,10 +126,10 @@
 		E9C42BF41942FD18001CF2DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9C42BF51942FD18001CF2DC /* YARUKI　Switch-Info.plist */,
+				E9C42BF51942FD18001CF2DC /* YARUKI-Info.plist */,
 				E9C42BF61942FD18001CF2DC /* InfoPlist.strings */,
 				E9C42BF91942FD18001CF2DC /* main.m */,
-				E9C42BFB1942FD18001CF2DC /* YARUKI　Switch-Prefix.pch */,
+				E9C42BFB1942FD18001CF2DC /* YARUKI-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 		E9C42C131942FD18001CF2DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9C42C141942FD18001CF2DC /* YARUKI　SwitchTests-Info.plist */,
+				E9C42C141942FD18001CF2DC /* YARUKITests-Info.plist */,
 				E9C42C151942FD18001CF2DC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9C42BE91942FD18001CF2DC /* YARUKI　Switch */ = {
+		E9C42BE91942FD18001CF2DC /* YARUKI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9C42C1C1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI　Switch" */;
+			buildConfigurationList = E9C42C1C1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI" */;
 			buildPhases = (
 				E9C42BE61942FD18001CF2DC /* Sources */,
 				E9C42BE71942FD18001CF2DC /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = "YARUKI　Switch";
+			name = YARUKI;
 			productName = "YARUKI　Switch";
-			productReference = E9C42BEA1942FD18001CF2DC /* YARUKI　Switch.app */;
+			productReference = E9C42BEA1942FD18001CF2DC /* YARUKI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9C42C0A1942FD18001CF2DC /* YARUKI　SwitchTests */ = {
+		E9C42C0A1942FD18001CF2DC /* YARUKITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9C42C1F1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI　SwitchTests" */;
+			buildConfigurationList = E9C42C1F1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKITests" */;
 			buildPhases = (
 				E9C42C071942FD18001CF2DC /* Sources */,
 				E9C42C081942FD18001CF2DC /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				E9C42C111942FD18001CF2DC /* PBXTargetDependency */,
 			);
-			name = "YARUKI　SwitchTests";
+			name = YARUKITests;
 			productName = "YARUKI　SwitchTests";
-			productReference = E9C42C0B1942FD18001CF2DC /* YARUKI　SwitchTests.xctest */;
+			productReference = E9C42C0B1942FD18001CF2DC /* YARUKITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E9C42BE51942FD18001CF2DC /* Build configuration list for PBXProject "YARUKI　Switch" */;
+			buildConfigurationList = E9C42BE51942FD18001CF2DC /* Build configuration list for PBXProject "YARUKI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +217,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9C42BE91942FD18001CF2DC /* YARUKI　Switch */,
-				E9C42C0A1942FD18001CF2DC /* YARUKI　SwitchTests */,
+				E9C42BE91942FD18001CF2DC /* YARUKI */,
+				E9C42C0A1942FD18001CF2DC /* YARUKITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 /* Begin PBXTargetDependency section */
 		E9C42C111942FD18001CF2DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9C42BE91942FD18001CF2DC /* YARUKI　Switch */;
+			target = E9C42BE91942FD18001CF2DC /* YARUKI */;
 			targetProxy = E9C42C101942FD18001CF2DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,9 +377,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YARUKI　Switch/YARUKI　Switch-Prefix.pch";
-				INFOPLIST_FILE = "YARUKI　Switch/YARUKI　Switch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "YARUKI　Switch/YARUKI-Prefix.pch";
+				INFOPLIST_FILE = "YARUKI　Switch/YARUKI-Info.plist";
+				PRODUCT_NAME = YARUKI;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,9 +390,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YARUKI　Switch/YARUKI　Switch-Prefix.pch";
-				INFOPLIST_FILE = "YARUKI　Switch/YARUKI　Switch-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "YARUKI　Switch/YARUKI-Prefix.pch";
+				INFOPLIST_FILE = "YARUKI　Switch/YARUKI-Info.plist";
+				PRODUCT_NAME = YARUKI;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -412,8 +412,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "YARUKI　SwitchTests/YARUKI　SwitchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "YARUKI　SwitchTests/YARUKITests-Info.plist";
+				PRODUCT_NAME = YARUKITests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -430,8 +430,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YARUKI　Switch/YARUKI　Switch-Prefix.pch";
-				INFOPLIST_FILE = "YARUKI　SwitchTests/YARUKI　SwitchTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "YARUKI　SwitchTests/YARUKITests-Info.plist";
+				PRODUCT_NAME = YARUKITests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9C42BE51942FD18001CF2DC /* Build configuration list for PBXProject "YARUKI　Switch" */ = {
+		E9C42BE51942FD18001CF2DC /* Build configuration list for PBXProject "YARUKI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C42C1A1942FD18001CF2DC /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9C42C1C1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI　Switch" */ = {
+		E9C42C1C1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C42C1D1942FD18001CF2DC /* Debug */,
@@ -457,7 +457,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		E9C42C1F1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKI　SwitchTests" */ = {
+		E9C42C1F1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C42C201942FD18001CF2DC /* Debug */,

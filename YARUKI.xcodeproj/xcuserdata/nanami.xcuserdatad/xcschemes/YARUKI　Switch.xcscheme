@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E9C42BE91942FD18001CF2DC"
-               BuildableName = "YARUKI&#x3000;Switch.app"
-               BlueprintName = "YARUKI&#x3000;Switch"
-               ReferencedContainer = "container:YARUKI&#x3000;Switch.xcodeproj">
+               BuildableName = "YARUKI.app"
+               BlueprintName = "YARUKI"
+               ReferencedContainer = "container:YARUKI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E9C42C0A1942FD18001CF2DC"
-               BuildableName = "YARUKI&#x3000;SwitchTests.xctest"
-               BlueprintName = "YARUKI&#x3000;SwitchTests"
-               ReferencedContainer = "container:YARUKI&#x3000;Switch.xcodeproj">
+               BuildableName = "YARUKITests.xctest"
+               BlueprintName = "YARUKITests"
+               ReferencedContainer = "container:YARUKI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9C42BE91942FD18001CF2DC"
-            BuildableName = "YARUKI&#x3000;Switch.app"
-            BlueprintName = "YARUKI&#x3000;Switch"
-            ReferencedContainer = "container:YARUKI&#x3000;Switch.xcodeproj">
+            BuildableName = "YARUKI.app"
+            BlueprintName = "YARUKI"
+            ReferencedContainer = "container:YARUKI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9C42BE91942FD18001CF2DC"
-            BuildableName = "YARUKI&#x3000;Switch.app"
-            BlueprintName = "YARUKI&#x3000;Switch"
-            ReferencedContainer = "container:YARUKI&#x3000;Switch.xcodeproj">
+            BuildableName = "YARUKI.app"
+            BlueprintName = "YARUKI"
+            ReferencedContainer = "container:YARUKI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E9C42BE91942FD18001CF2DC"
-            BuildableName = "YARUKI&#x3000;Switch.app"
-            BlueprintName = "YARUKI&#x3000;Switch"
-            ReferencedContainer = "container:YARUKI&#x3000;Switch.xcodeproj">
+            BuildableName = "YARUKI.app"
+            BlueprintName = "YARUKI"
+            ReferencedContainer = "container:YARUKI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
