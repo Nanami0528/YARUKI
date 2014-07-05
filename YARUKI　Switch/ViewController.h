@@ -26,6 +26,13 @@
     
     
     NSTimer *timer;
+    
+    
+    
+    
+    
+    
+    
 
     
  }
