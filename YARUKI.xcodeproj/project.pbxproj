@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9AD05481967DDAF001AD40A /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD05471967DDAF001AD40A /* secondViewController.m */; };
+		E9AD054A1967E4FF001AD40A /* haikei siro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9AD05491967E4FF001AD40A /* haikei siro.jpg */; };
+		E9AD05531967EB17001AD40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD05521967EB17001AD40A /* HomeViewController.m */; };
+		E9AD05561967EEFB001AD40A /* SeikaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD05551967EEFB001AD40A /* SeikaViewController.m */; };
 		E9C42BEE1942FD18001CF2DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BED1942FD18001CF2DC /* Foundation.framework */; };
 		E9C42BF01942FD18001CF2DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */; };
 		E9C42BF21942FD18001CF2DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BF11942FD18001CF2DC /* UIKit.framework */; };
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9AD05461967DDAF001AD40A /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		E9AD05471967DDAF001AD40A /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		E9AD05491967E4FF001AD40A /* haikei siro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "haikei siro.jpg"; sourceTree = "<group>"; };
+		E9AD05511967EB17001AD40A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E9AD05521967EB17001AD40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E9AD05541967EEFB001AD40A /* SeikaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeikaViewController.h; sourceTree = "<group>"; };
+		E9AD05551967EEFB001AD40A /* SeikaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeikaViewController.m; sourceTree = "<group>"; };
 		E9C42BEA1942FD18001CF2DC /* YARUKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YARUKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42BED1942FD18001CF2DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,11 +123,18 @@
 		E9C42BF31942FD18001CF2DC /* YARUKI　Switch */ = {
 			isa = PBXGroup;
 			children = (
+				E9AD05491967E4FF001AD40A /* haikei siro.jpg */,
 				E9C42BFC1942FD18001CF2DC /* AppDelegate.h */,
 				E9C42BFD1942FD18001CF2DC /* AppDelegate.m */,
 				E9C42BFF1942FD18001CF2DC /* Main.storyboard */,
 				E9C42C021942FD18001CF2DC /* ViewController.h */,
 				E9C42C031942FD18001CF2DC /* ViewController.m */,
+				E9AD05541967EEFB001AD40A /* SeikaViewController.h */,
+				E9AD05551967EEFB001AD40A /* SeikaViewController.m */,
+				E9AD05511967EB17001AD40A /* HomeViewController.h */,
+				E9AD05521967EB17001AD40A /* HomeViewController.m */,
+				E9AD05461967DDAF001AD40A /* secondViewController.h */,
+				E9AD05471967DDAF001AD40A /* secondViewController.m */,
 				E9C42C051942FD18001CF2DC /* Images.xcassets */,
 				E9C42BF41942FD18001CF2DC /* Supporting Files */,
 			);
@@ -230,6 +248,7 @@
 			files = (
 				E9C42C061942FD18001CF2DC /* Images.xcassets in Resources */,
 				E9C42BF81942FD18001CF2DC /* InfoPlist.strings in Resources */,
+				E9AD054A1967E4FF001AD40A /* haikei siro.jpg in Resources */,
 				E9C42C011942FD18001CF2DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AD05481967DDAF001AD40A /* secondViewController.m in Sources */,
 				E9C42C041942FD18001CF2DC /* ViewController.m in Sources */,
 				E9C42BFE1942FD18001CF2DC /* AppDelegate.m in Sources */,
+				E9AD05531967EB17001AD40A /* HomeViewController.m in Sources */,
+				E9AD05561967EEFB001AD40A /* SeikaViewController.m in Sources */,
 				E9C42BFA1942FD18001CF2DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +478,7 @@
 				E9C42C1E1942FD18001CF2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9C42C1F1942FD18001CF2DC /* Build configuration list for PBXNativeTarget "YARUKITests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +487,7 @@
 				E9C42C211942FD18001CF2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

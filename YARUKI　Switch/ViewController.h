@@ -10,9 +10,7 @@
 
 @interface ViewController : UIViewController
 {
-    
-
-    
+  
     int min;
     int sec;
     int hour;
@@ -43,6 +41,8 @@
 
 
 -(void)up;
+
+-(IBAction)back1;
 
 
 @end

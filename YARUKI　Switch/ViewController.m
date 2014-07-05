@@ -13,7 +13,6 @@
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -25,6 +24,10 @@
     minLabel.text = [NSString stringWithFormat:@"%2d",min] ;
     secLabel.text = [NSString stringWithFormat:@"%2d",sec] ;
     hourLabel.text = [NSString stringWithFormat:@"%2d",hour] ;
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,6 +87,13 @@
     
     
 }
+
+
+-(IBAction)back1{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
 
 
 
