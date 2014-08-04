@@ -34,6 +34,9 @@
     
     // UIPickerのインスタンスをビューに追加
     [self.view addSubview:picker];
+    
+    self.yaruki_select_time= 0;
+    
 }
 
 /**
@@ -90,10 +93,12 @@ numberOfRowsInComponent:(NSInteger)component
 {
     switch (component) {
         case 0: // 1列目
+            NSLog(@"%d",row);
             return [NSString stringWithFormat:@"%d", row];
             break;
             
         case 1: // 2列目
+            
             return [NSString stringWithFormat:@"%d時間", row];
             break;
             
@@ -131,11 +136,13 @@ numberOfRowsInComponent:(NSInteger)component
     // 4列目の選択された行数を取得
     NSInteger val3 = [pickerView selectedRowInComponent:3];
     
+    self.yaruki_select_time=val0*60*60*10 +val1*60*60 +val2*10*60 + val3*60;
+    NSLog(@"%ld",self.yaruki_select_time);
     
-    NSLog(@"1列目:%d行目が選択", val0);
-    NSLog(@"2列目:%d行目が選択", val1);
-    NSLog(@"3列目:%d行目が選択", val2);
-    NSLog(@"4列目:%d行目が選択", val3);
+    NSLog(@"1列目:%ld行目が選択", val0);
+    NSLog(@"2列目:%ld行目が選択", val1);
+    NSLog(@"3列目:%ld行目が選択", val2);
+    NSLog(@"4列目:%ld行目が選択", val3);
 };
 
 -(IBAction)back{
@@ -144,6 +151,12 @@ numberOfRowsInComponent:(NSInteger)component
 }
 
 
+-(IBAction)yaruki{
+    MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    mainVC.yaruki_time = self.yaruki_select_time;
+    [self presentViewController:mainVC animated:YES completion:nil];
+    
+}
 
 
 

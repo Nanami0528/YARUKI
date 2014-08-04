@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @interface secondViewController : UIViewController
 
  <UIPickerViewDelegate, UIPickerViewDataSource>
 
+{}
 
 -(IBAction)back;
+-(IBAction)yaruki;
 
+@property long yaruki_select_time;
 
 @end

@@ -8,16 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 {
   
-    int min;
-    int sec;
-    int hour;
+    long sec;
+    
+    
+    
+   
     
     IBOutlet UILabel *minLabel;
     IBOutlet UILabel *secLabel;
     IBOutlet UILabel *hourLabel;
+    IBOutlet UIProgressView *bar;
     
     
     
@@ -43,6 +46,8 @@
 -(void)up;
 
 -(IBAction)back1;
+
+@property long yaruki_time;
 
 
 @end

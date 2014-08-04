@@ -11,6 +11,9 @@
 		E9AD054A1967E4FF001AD40A /* haikei siro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9AD05491967E4FF001AD40A /* haikei siro.jpg */; };
 		E9AD05531967EB17001AD40A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD05521967EB17001AD40A /* HomeViewController.m */; };
 		E9AD05561967EEFB001AD40A /* SeikaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD05551967EEFB001AD40A /* SeikaViewController.m */; };
+		E9AD055819795F6C001AD40A /* img-smp02_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9AD055719795F6C001AD40A /* img-smp02_1.gif */; };
+		E9AD055C19796120001AD40A /* 2014-July.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9AD055B19796120001AD40A /* 2014-July.jpg */; };
+		E9AD055F197A3A47001AD40A /* Karenda-ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */; };
 		E9C42BEE1942FD18001CF2DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BED1942FD18001CF2DC /* Foundation.framework */; };
 		E9C42BF01942FD18001CF2DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */; };
 		E9C42BF21942FD18001CF2DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BF11942FD18001CF2DC /* UIKit.framework */; };
@@ -18,7 +21,7 @@
 		E9C42BFA1942FD18001CF2DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C42BF91942FD18001CF2DC /* main.m */; };
 		E9C42BFE1942FD18001CF2DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C42BFD1942FD18001CF2DC /* AppDelegate.m */; };
 		E9C42C011942FD18001CF2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C42BFF1942FD18001CF2DC /* Main.storyboard */; };
-		E9C42C041942FD18001CF2DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C42C031942FD18001CF2DC /* ViewController.m */; };
+		E9C42C041942FD18001CF2DC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C42C031942FD18001CF2DC /* MainViewController.m */; };
 		E9C42C061942FD18001CF2DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C42C051942FD18001CF2DC /* Images.xcassets */; };
 		E9C42C0D1942FD18001CF2DC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42C0C1942FD18001CF2DC /* XCTest.framework */; };
 		E9C42C0E1942FD18001CF2DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BED1942FD18001CF2DC /* Foundation.framework */; };
@@ -45,6 +48,10 @@
 		E9AD05521967EB17001AD40A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E9AD05541967EEFB001AD40A /* SeikaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeikaViewController.h; sourceTree = "<group>"; };
 		E9AD05551967EEFB001AD40A /* SeikaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeikaViewController.m; sourceTree = "<group>"; };
+		E9AD055719795F6C001AD40A /* img-smp02_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "img-smp02_1.gif"; sourceTree = "<group>"; };
+		E9AD055B19796120001AD40A /* 2014-July.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2014-July.jpg"; sourceTree = "<group>"; };
+		E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Karenda-ViewController.h"; sourceTree = SOURCE_ROOT; };
+		E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Karenda-ViewController.m"; sourceTree = SOURCE_ROOT; };
 		E9C42BEA1942FD18001CF2DC /* YARUKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YARUKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42BED1942FD18001CF2DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,8 +63,8 @@
 		E9C42BFC1942FD18001CF2DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9C42BFD1942FD18001CF2DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E9C42C001942FD18001CF2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9C42C021942FD18001CF2DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E9C42C031942FD18001CF2DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9C42C021942FD18001CF2DC /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E9C42C031942FD18001CF2DC /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E9C42C051942FD18001CF2DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9C42C0B1942FD18001CF2DC /* YARUKITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YARUKITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42C0C1942FD18001CF2DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,12 +130,16 @@
 		E9C42BF31942FD18001CF2DC /* YARUKI　Switch */ = {
 			isa = PBXGroup;
 			children = (
+				E9AD055B19796120001AD40A /* 2014-July.jpg */,
+				E9AD055719795F6C001AD40A /* img-smp02_1.gif */,
 				E9AD05491967E4FF001AD40A /* haikei siro.jpg */,
 				E9C42BFC1942FD18001CF2DC /* AppDelegate.h */,
 				E9C42BFD1942FD18001CF2DC /* AppDelegate.m */,
 				E9C42BFF1942FD18001CF2DC /* Main.storyboard */,
-				E9C42C021942FD18001CF2DC /* ViewController.h */,
-				E9C42C031942FD18001CF2DC /* ViewController.m */,
+				E9C42C021942FD18001CF2DC /* MainViewController.h */,
+				E9C42C031942FD18001CF2DC /* MainViewController.m */,
+				E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */,
+				E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */,
 				E9AD05541967EEFB001AD40A /* SeikaViewController.h */,
 				E9AD05551967EEFB001AD40A /* SeikaViewController.m */,
 				E9AD05511967EB17001AD40A /* HomeViewController.h */,
@@ -246,7 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AD055C19796120001AD40A /* 2014-July.jpg in Resources */,
 				E9C42C061942FD18001CF2DC /* Images.xcassets in Resources */,
+				E9AD055819795F6C001AD40A /* img-smp02_1.gif in Resources */,
 				E9C42BF81942FD18001CF2DC /* InfoPlist.strings in Resources */,
 				E9AD054A1967E4FF001AD40A /* haikei siro.jpg in Resources */,
 				E9C42C011942FD18001CF2DC /* Main.storyboard in Resources */,
@@ -269,9 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9AD05481967DDAF001AD40A /* secondViewController.m in Sources */,
-				E9C42C041942FD18001CF2DC /* ViewController.m in Sources */,
+				E9C42C041942FD18001CF2DC /* MainViewController.m in Sources */,
 				E9C42BFE1942FD18001CF2DC /* AppDelegate.m in Sources */,
 				E9AD05531967EB17001AD40A /* HomeViewController.m in Sources */,
+				E9AD055F197A3A47001AD40A /* Karenda-ViewController.m in Sources */,
 				E9AD05561967EEFB001AD40A /* SeikaViewController.m in Sources */,
 				E9C42BFA1942FD18001CF2DC /* main.m in Sources */,
 			);
