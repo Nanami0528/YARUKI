@@ -11,13 +11,18 @@
 
 @interface secondViewController : UIViewController
 
- <UIPickerViewDelegate, UIPickerViewDataSource>
+ <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
+{
+    
+    
+    NSUserDefaults *defaults;
+    
 
-{}
+}
 
 -(IBAction)back;
 -(IBAction)yaruki;
 
-@property long yaruki_select_time;
-
+@property (nonatomic) long yaruki_select_time;
+@property(nonatomic) IBOutlet UITextField* taskNameField;
 @end

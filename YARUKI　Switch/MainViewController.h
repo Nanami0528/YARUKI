@@ -22,6 +22,13 @@
     IBOutlet UILabel *hourLabel;
     IBOutlet UIProgressView *bar;
     
+    IBOutlet UILabel  * secremaining;
+    IBOutlet UILabel  * minremaining;
+    IBOutlet UILabel  * hourremaining;
+    
+    IBOutlet UILabel *taskNameLabel;
+    
+    
     
     
     
@@ -31,8 +38,7 @@
     
     
     
-    
-    
+     NSUserDefaults *defaults;    
     
 
     
@@ -48,6 +54,7 @@
 -(IBAction)back1;
 
 @property long yaruki_time;
-
+@property (strong, nonatomic) NSString *taskName;
+@property (nonatomic) int taskId;
 
 @end

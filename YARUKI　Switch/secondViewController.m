@@ -17,8 +17,21 @@
     UIPickerView *picker;
 }
 
+@synthesize taskNameField;
+@synthesize yaruki_select_time;
+
 - (void)viewDidLoad
 {
+    
+    defaults = [NSUserDefaults standardUserDefaults];
+    
+    
+    
+    
+    
+    
+    
+    
     [super viewDidLoad];
     
     // UIPickerのインスタンス化
@@ -26,6 +39,7 @@
     
     // デリゲートを設定
     picker.delegate = self;
+    taskNameField.delegate = self;
     
     // データソースを設定
     picker.dataSource = self;
@@ -36,6 +50,8 @@
     [self.view addSubview:picker];
     
     self.yaruki_select_time= 0;
+    
+    
     
 }
 
@@ -53,7 +69,23 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component
 {
-    return 5;
+    switch (component) {
+        case 0: // 1列目
+            return 101;
+            break;
+            
+        case 1: // 2列目
+            return 60;
+            break;
+            
+        default:
+            return 0;
+            break;
+    }
+    
+    
+    
+    
 }
 
 /**
@@ -64,21 +96,13 @@ numberOfRowsInComponent:(NSInteger)component
 {
     switch (component) {
         case 0: // 1列目
-            return 30.0;
+            return 100.0;
             break;
             
         case 1: // 2列目
             return 100.0;
             break;
-            
-        case 2: // 3列目
-            return 20.0;
-            break;
-            
-        case 3: // 4列目
-            return 50.0;
-            break;
-            
+        
         default:
             return 0;
             break;
@@ -94,23 +118,15 @@ numberOfRowsInComponent:(NSInteger)component
     switch (component) {
         case 0: // 1列目
             NSLog(@"%d",row);
-            return [NSString stringWithFormat:@"%d", row];
+            return [NSString stringWithFormat:@"%d時間", row];
             break;
             
         case 1: // 2列目
             
-            return [NSString stringWithFormat:@"%d時間", row];
-            break;
-            
-        case 2: // 3列目
-            return [NSString stringWithFormat:@"%d",  row];
-            break;
-            
-        case 3: // 4列目
             return [NSString stringWithFormat:@"%d分", row];
             break;
             
-            
+ 
             
         default:
             return 0;
@@ -130,19 +146,13 @@ numberOfRowsInComponent:(NSInteger)component
     // 2列目の選択された行数を取得
     NSInteger val1 = [pickerView selectedRowInComponent:1];
     
-    // 3列目の選択された行数を取得
-    NSInteger val2 = [pickerView selectedRowInComponent:2];
     
-    // 4列目の選択された行数を取得
-    NSInteger val3 = [pickerView selectedRowInComponent:3];
-    
-    self.yaruki_select_time=val0*60*60*10 +val1*60*60 +val2*10*60 + val3*60;
+    self.yaruki_select_time=val0*60*60 +val1*60 ;
     NSLog(@"%ld",self.yaruki_select_time);
     
     NSLog(@"1列目:%ld行目が選択", val0);
     NSLog(@"2列目:%ld行目が選択", val1);
-    NSLog(@"3列目:%ld行目が選択", val2);
-    NSLog(@"4列目:%ld行目が選択", val3);
+    
 };
 
 -(IBAction)back{
@@ -152,9 +162,65 @@ numberOfRowsInComponent:(NSInteger)component
 
 
 -(IBAction)yaruki{
+    
+    NSLog(@"osaretayo");
+    
+    
+    NSLog(@"%@ %d", taskNameField.text, yaruki_select_time);
+    
+   //NSDictionary *taskDict= [NSDictionary dictionaryWithObjectsAndKeys:taskNameField.text, @"name", ★ [NSString stringWithFormat:@"%d", yaruki_select_time], @"selecttime", @"0", @"time",nil];
+    
+     NSMutableDictionary *taskDict= [ NSMutableDictionary  dictionaryWithObjectsAndKeys:taskNameField.text, @"name",[NSString stringWithFormat:@"%d", yaruki_select_time], @"selecttime", @"0", @"time",nil];
+    
+    
+    NSLog(@"aaaaaaaaaaaa %@",[taskDict objectForKey:@"time"]);
+    /*
+     self.taskNameField.text, @"name",
+     self.yaruki_select_time, @"selecttime",
+                         0 , @"time",nil];
+    
+    */
+    NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
+    
+    if (taskArry == nil) {
+        taskArry = [[NSMutableArray alloc] initWithObjects:taskDict, nil];
+        
+    } else {
+        [taskArry addObject:taskDict];
+    }
+    
+    [defaults setObject:taskArry forKey:@"yaruki_task"];
+    [defaults synchronize];
+    
+    //yaruki_task_8374823712367
+    
+    //NSDate *now = [NSDate date];
+    //NSTimeInterval nowEpochSeconds = [now timeIntervalSince1970];
+    
+    //NSString *taskId = [NSString stringWithFormat:@"yaruki_task_%d", nowEpochSeconds];
+    
+    //[defaults setObject:task forKey:taskId];
+                           
     MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
-    mainVC.yaruki_time = self.yaruki_select_time;
+
+    mainVC.taskId = (int)[taskArry count] - 1;
     [self presentViewController:mainVC animated:YES completion:nil];
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)sender {
+    
+    // キーボードを閉じる
+    [sender resignFirstResponder];
+    
+    [defaults setObject:self.taskNameField.text forKey:@"name"];
+    
+    [defaults setInteger:self.yaruki_select_time forKey:@"selecttime"];
+    
+    
+    
+    return TRUE;
+    
     
 }
 
