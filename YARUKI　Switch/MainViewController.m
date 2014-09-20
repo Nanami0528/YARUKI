@@ -46,7 +46,7 @@
         taskNameLabel.text = (NSString *)[[taskArry objectAtIndex:taskId] objectForKey:@"name"];
     }    
 
-    NSLog(@"//%d",self.yaruki_time);
+    NSLog(@"//%@",taskArry);
     
     [super viewDidLoad];
     

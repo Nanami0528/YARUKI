@@ -180,16 +180,17 @@ numberOfRowsInComponent:(NSInteger)component
                          0 , @"time",nil];
     
     */
-    NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
+    NSArray *taskArray = [defaults objectForKey:@"yaruki_task"];
+    NSMutableArray *taskMutableArray = [taskArray mutableCopy];
     
-    if (taskArry == nil) {
-        taskArry = [[NSMutableArray alloc] initWithObjects:taskDict, nil];
+    if (taskArray == nil) {
+        taskArray = [[NSMutableArray alloc] initWithObjects:taskDict, nil];
         
     } else {
-        [taskArry addObject:taskDict];
+        [taskMutableArray addObject:taskDict];
     }
     
-    [defaults setObject:taskArry forKey:@"yaruki_task"];
+    [defaults setObject:taskArray forKey:@"yaruki_task"];
     [defaults synchronize];
     
     //yaruki_task_8374823712367
@@ -203,7 +204,7 @@ numberOfRowsInComponent:(NSInteger)component
                            
     MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
 
-    mainVC.taskId = (int)[taskArry count] - 1;
+    mainVC.taskId = (int)[taskArray count] - 1;
     [self presentViewController:mainVC animated:YES completion:nil];
     
 }
