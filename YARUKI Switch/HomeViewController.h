@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController{
+    
+    NSUserDefaults *userDefaults;
+}
 
 
+
+-(IBAction)reset;
 
 
 @end

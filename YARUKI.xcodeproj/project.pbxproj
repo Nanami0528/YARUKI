@@ -102,6 +102,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9167A4B19CD929C00678274 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				E9167A2519CD911C00678274 /* 2014-July.jpg */,
+				E9167A2819CD911C00678274 /* haikei siro.jpg */,
+				E9167A2C19CD911C00678274 /* img-smp02_1.gif */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
 		E9C42BE11942FD18001CF2DC = {
 			isa = PBXGroup;
 			children = (
@@ -136,15 +146,12 @@
 			isa = PBXGroup;
 			children = (
 				E9167A2B19CD911C00678274 /* Images.xcassets */,
-				E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */,
-				E9167A2519CD911C00678274 /* 2014-July.jpg */,
-				E9167A2819CD911C00678274 /* haikei siro.jpg */,
+				E9167A4B19CD929C00678274 /* imgs */,
 				E9167A2619CD911C00678274 /* AppDelegate.h */,
 				E9167A2719CD911C00678274 /* AppDelegate.m */,
 				E9167A2919CD911C00678274 /* HomeViewController.h */,
 				E9167A2A19CD911C00678274 /* HomeViewController.m */,
 				E9167A4819CD915000678274 /* Main.storyboard */,
-				E9167A2C19CD911C00678274 /* img-smp02_1.gif */,
 				E9167A2D19CD911C00678274 /* ListViewController.h */,
 				E9167A2E19CD911C00678274 /* ListViewController.m */,
 				E9167A3019CD911C00678274 /* MainViewController.h */,
@@ -155,6 +162,7 @@
 				E9167A3519CD911C00678274 /* SeikaViewController.m */,
 				E9167A3619CD911C00678274 /* TableViewController.h */,
 				E9167A3719CD911C00678274 /* TableViewController.m */,
+				E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */,
 				E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */,
 				E9C42BF41942FD18001CF2DC /* Supporting Files */,
 			);

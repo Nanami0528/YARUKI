@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +48,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(IBAction)reset{
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+    NSMutableArray *taskArry = [userDefaults objectForKey:@"yaruki_task"];
+    NSLog(@"//%@",taskArry);
+}
+
+
 
 @end

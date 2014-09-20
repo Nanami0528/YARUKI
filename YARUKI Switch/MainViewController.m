@@ -46,7 +46,6 @@
         taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
     }    
 
-    NSLog(@"//%@",taskArry);
     
     [super viewDidLoad];
     
