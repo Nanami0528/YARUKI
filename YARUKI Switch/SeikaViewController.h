@@ -11,11 +11,31 @@
 @interface SeikaViewController : UIViewController
 {
    IBOutlet UIProgressView *firstbar;
+   IBOutlet UIProgressView *bar2;
+   IBOutlet UIProgressView *bar3;
+   IBOutlet UIProgressView *bar4;
+   IBOutlet UIProgressView *bar5;
+
+
+
+    
+    
+    
+    
+    
+    
     NSUserDefaults *defaults;
     
     
     IBOutlet UILabel  * tasknameLabel;
+    
+    IBOutlet UILabel  * tasknameLabel2;
+    
+    IBOutlet UILabel  * tasknameLabel3;
+ 
+    IBOutlet UILabel  * tasknameLabel4;
 
+    IBOutlet UILabel  * tasknameLabel5;
     
     
     
