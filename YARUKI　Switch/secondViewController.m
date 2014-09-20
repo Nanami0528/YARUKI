@@ -185,12 +185,13 @@ numberOfRowsInComponent:(NSInteger)component
     
     if (taskArray == nil) {
         taskArray = [[NSMutableArray alloc] initWithObjects:taskDict, nil];
-        
+        [defaults setObject:taskArray forKey:@"yaruki_task"];
     } else {
         [taskMutableArray addObject:taskDict];
+        [defaults setObject:taskMutableArray forKey:@"yaruki_task"];
     }
     
-    [defaults setObject:taskArray forKey:@"yaruki_task"];
+    
     [defaults synchronize];
     
     //yaruki_task_8374823712367

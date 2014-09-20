@@ -67,7 +67,7 @@ numberOfRowsInSection:(NSInteger)section
     UILabel *textlabel=(UILabel *)[cell viewWithTag:1];
     //NSLog(@"cccccccc%@",taskArry);
 
-    //NSDictionaryここかえたよ〜〜〜〜〜〜〜〜〜〜〜〜〜                                      ★
+    //NSDictionaryここかえた                                ★
     NSMutableDictionary*task = [taskArry objectAtIndex:[indexPath row]];
     NSLog(@"bbbbb%@",[task objectForKey:@"name"]);
     

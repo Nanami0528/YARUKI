@@ -9,7 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface SeikaViewController : UIViewController
+{
+   IBOutlet UIProgressView *firstbar;
+    NSUserDefaults *defaults;
+    
+    
+    IBOutlet UILabel  * tasknameLabel;
 
+    
+    
+    
+}
 
 -(IBAction)back2;
 

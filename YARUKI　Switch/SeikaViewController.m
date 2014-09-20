@@ -27,7 +27,44 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
+    
+    firstbar.transform = CGAffineTransformMakeScale(1.0, 14.0);
+    firstbar.progress =  0.0  ;//ここ←
+    firstbar.progressTintColor = [UIColor colorWithRed:0.0 green:0.94 blue:0.38 alpha:0.4];
+    firstbar.trackTintColor = [UIColor colorWithRed:0.0 green:0.40 blue:0.19 alpha:0.2];
+    
+    defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
+    NSLog(@"%@",taskArry);
+//    firstbar.progress =
+    
+    NSDictionary *dic = taskArry [4];
+    long time = dic[@"time"];
+    NSLog(@"%ld",time);
+    NSLog(@"時間: %.1ld",(time%3600)/60);
+    long time2 = dic[@"selecttime"];
+    NSLog(@"%ld",time2);
+    NSLog(@"時間: %.1ld",time2%3600);
+    NSString *str  = [dic objectForKey:@"name"];
+        NSLog(@"%@",str);
+    
+    int selecttime = 60;
+    int time5 = 30;
+    firstbar.progress = selecttime;
+    
+    firstbar.progress= (float)time5/selecttime;
+    
+   tasknameLabel.text =[dic objectForKey:@"name"];
+    
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

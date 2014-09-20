@@ -42,8 +42,8 @@
         NSLog(@"//////%d",self.yaruki_time);
 
         
-        sec = [[[taskArry objectAtIndex:taskId] objectForKey:@"time"] longLongValue];
-        taskNameLabel.text = (NSString *)[[taskArry objectAtIndex:taskId] objectForKey:@"name"];
+        sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
+        taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
     }    
 
     NSLog(@"//%@",taskArry);
