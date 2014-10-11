@@ -17,6 +17,7 @@
 @synthesize yaruki_time;
 @synthesize taskName;
 @synthesize taskId;
+@synthesize tagNum;
 
 - (void)viewDidLoad
 {
@@ -41,9 +42,19 @@
         yaruki_time = st-t;
         NSLog(@"//////%d",self.yaruki_time);
 
+
         
-        sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
-        taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
+        if(tagNum==1){//ListVCからの値の取り出し方
+            sec = t;
+            taskNameLabel.text = (NSString *)[taskDict objectForKey:@"name"];
+            NSLog(@"%@",taskDict);
+        }else if(tagNum==2){//SecondVCから
+            
+            sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
+            taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
+            NSLog(@"%ld",sec);
+        }
+        NSLog(@"%@",taskArry);
     }    
 
     
