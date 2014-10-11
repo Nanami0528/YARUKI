@@ -17,10 +17,13 @@
 @synthesize yaruki_time;
 @synthesize taskName;
 @synthesize taskId;
-
+@synthesize tagNum;
 - (void)viewDidLoad
 {
   
+    
+    
+    
     defaults = [NSUserDefaults standardUserDefaults];
 
     NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
@@ -42,9 +45,23 @@
         NSLog(@"//////%d",self.yaruki_time);
 
         
-        sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
-        taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
-    }    
+        
+       
+        
+        if(tagNum==1){//ListVCからの値の取り出し方
+            sec = t;
+            taskNameLabel.text = (NSString *)[taskDict objectForKey:@"name"];
+            NSLog(@"%@",taskDict);
+        }else if(tagNum==2){//SecondVCから
+            
+            sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
+            taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
+            NSLog(@"%ld",sec);
+        }
+        NSLog(@"%@",taskArry);
+    
+    
+    }
 
     
     [super viewDidLoad];
@@ -127,10 +144,10 @@
        } else {
           
            NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-           NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
+           NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId +1];
            [newDict addEntriesFromDictionary:oldDict];
            [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-           [taskArry replaceObjectAtIndex:taskId withObject:newDict];
+           [taskArry replaceObjectAtIndex:taskId+1 withObject:newDict];
            
            [defaults setObject:taskArry forKey:@"yaruki_task"];
            [defaults synchronize];

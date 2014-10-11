@@ -21,11 +21,14 @@
 		E9167A4519CD911C00678274 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9167A3719CD911C00678274 /* TableViewController.m */; };
 		E9167A4619CD911C00678274 /* YARUKI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9167A3819CD911C00678274 /* YARUKI-Info.plist */; };
 		E9167A4A19CD915000678274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9167A4819CD915000678274 /* Main.storyboard */; };
+		E983925F19E92CA1005B9889 /* start2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983925E19E92CA1005B9889 /* start2.gif */; };
+		E983926119E92F9F005B9889 /* botan3.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983926019E92F9F005B9889 /* botan3.gif */; };
 		E9AD055F197A3A47001AD40A /* Karenda-ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */; };
 		E9BAB67019E8F47300E716C3 /* GauFontDonutShop.suit in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB66F19E8F47300E716C3 /* GauFontDonutShop.suit */; };
 		E9BAB67419E8FCD500E716C3 /* HOME.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67319E8FCD500E716C3 /* HOME.gif */; };
 		E9BAB67619E8FEB500E716C3 /* HOME'.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67519E8FEB500E716C3 /* HOME'.gif */; };
 		E9BAB67819E9020B00E716C3 /* HOME2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67719E9020B00E716C3 /* HOME2.gif */; };
+		E9BAB67A19E91A6800E716C3 /* 題１.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67919E91A6800E716C3 /* 題１.gif */; };
 		E9C42BEE1942FD18001CF2DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BED1942FD18001CF2DC /* Foundation.framework */; };
 		E9C42BF01942FD18001CF2DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */; };
 		E9C42BF21942FD18001CF2DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C42BF11942FD18001CF2DC /* UIKit.framework */; };
@@ -69,12 +72,15 @@
 		E9167A3819CD911C00678274 /* YARUKI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "YARUKI-Info.plist"; path = "YARUKI Switch/YARUKI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E9167A3919CD911C00678274 /* YARUKI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YARUKI-Prefix.pch"; path = "YARUKI Switch/YARUKI-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		E9167A4919CD915000678274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "YARUKI Switch/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		E983925E19E92CA1005B9889 /* start2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start2.gif; sourceTree = "<group>"; };
+		E983926019E92F9F005B9889 /* botan3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = botan3.gif; sourceTree = "<group>"; };
 		E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Karenda-ViewController.h"; sourceTree = SOURCE_ROOT; };
 		E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Karenda-ViewController.m"; sourceTree = SOURCE_ROOT; };
 		E9BAB66F19E8F47300E716C3 /* GauFontDonutShop.suit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GauFontDonutShop.suit; sourceTree = "<group>"; };
 		E9BAB67319E8FCD500E716C3 /* HOME.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HOME.gif; sourceTree = "<group>"; };
 		E9BAB67519E8FEB500E716C3 /* HOME'.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "HOME'.gif"; sourceTree = "<group>"; };
 		E9BAB67719E9020B00E716C3 /* HOME2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HOME2.gif; sourceTree = "<group>"; };
+		E9BAB67919E91A6800E716C3 /* 題１.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "題１.gif"; sourceTree = "<group>"; };
 		E9C42BEA1942FD18001CF2DC /* YARUKI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YARUKI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C42BED1942FD18001CF2DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9C42BEF1942FD18001CF2DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +129,9 @@
 		E9C42BE11942FD18001CF2DC = {
 			isa = PBXGroup;
 			children = (
+				E983926019E92F9F005B9889 /* botan3.gif */,
+				E983925E19E92CA1005B9889 /* start2.gif */,
+				E9BAB67919E91A6800E716C3 /* 題１.gif */,
 				E9BAB67719E9020B00E716C3 /* HOME2.gif */,
 				E9BAB67519E8FEB500E716C3 /* HOME'.gif */,
 				E9BAB67319E8FCD500E716C3 /* HOME.gif */,
@@ -287,7 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BAB67A19E91A6800E716C3 /* 題１.gif in Resources */,
 				E9167A4A19CD915000678274 /* Main.storyboard in Resources */,
+				E983926119E92F9F005B9889 /* botan3.gif in Resources */,
+				E983925F19E92CA1005B9889 /* start2.gif in Resources */,
 				E9BAB67019E8F47300E716C3 /* GauFontDonutShop.suit in Resources */,
 				E9167A3E19CD911C00678274 /* Images.xcassets in Resources */,
 				E9167A4619CD911C00678274 /* YARUKI-Info.plist in Resources */,

@@ -27,8 +27,8 @@
     
     
     
-    
-    
+    yarukiButton.layer.cornerRadius=10.0f;
+    backButton.layer.cornerRadius=10.0f;
     
     
     
@@ -206,6 +206,7 @@ numberOfRowsInComponent:(NSInteger)component
     MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
 
     mainVC.taskId = (int)[taskArray count] - 1;
+    mainVC.tagNum = 2;
     [self presentViewController:mainVC animated:YES completion:nil];
     
 }

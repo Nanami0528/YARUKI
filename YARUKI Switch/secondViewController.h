@@ -16,12 +16,14 @@
     
     
     NSUserDefaults *defaults;
-    
+    IBOutlet UIButton *backButton;
+        IBOutlet UIButton *yarukiButton;
 
 }
 
 -(IBAction)back;
 -(IBAction)yaruki;
+
 
 @property (nonatomic) long yaruki_select_time;
 @property(nonatomic) IBOutlet UITextField* taskNameField;

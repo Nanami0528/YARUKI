@@ -56,5 +56,5 @@
 @property long yaruki_time;
 @property (strong, nonatomic) NSString *taskName;
 @property (nonatomic) int taskId;
-
+@property (nonatomic) int tagNum;
 @end
