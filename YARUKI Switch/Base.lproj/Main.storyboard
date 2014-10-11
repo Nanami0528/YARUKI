@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bBe-BN-aVE">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -290,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxl-mO-Uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="-277"/>
+            <point key="canvasLocation" x="447" y="-977"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="zcG-zw-BJL">
@@ -304,16 +303,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ホーム" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhB-Xk-8bq">
-                                <rect key="frame" x="135" y="15" width="51" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsw-K1-rFo">
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="574"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-yQ-G5a">
-                                <rect key="frame" x="20" y="70" width="280" height="48"/>
+                                <rect key="frame" x="-5" y="70" width="338" height="95"/>
                                 <color key="backgroundColor" red="0.90258528030814045" green="0.99730947066326525" blue="0.70597775760123227" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" red="0.036391900510204134" green="0.015974832425951803" blue="0.014480324690378034" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="週何時間？　→">
+                                <state key="normal" title="週何時間？　">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -321,18 +323,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT2-Zp-eF4">
-                                <rect key="frame" x="20" y="219" width="280" height="48"/>
+                                <rect key="frame" x="-5" y="250" width="331" height="90"/>
                                 <color key="backgroundColor" red="1" green="0.74401696936076622" blue="0.83032358087948444" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.036391900509999998" green="0.015974832429999999" blue="0.014480324690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="目標！　　　→">
+                                <state key="normal" title="目標！">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jer-fH-tCJ">
-                                <rect key="frame" x="20" y="145" width="280" height="48"/>
+                                <rect key="frame" x="-5" y="164" width="338" height="89"/>
                                 <color key="backgroundColor" red="0.80586928094792909" green="1" blue="0.96938454309756017" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.036391900509999998" green="0.015974832429999999" blue="0.014480324690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="カレンダー　　→">
+                                <state key="normal" title="カレンダー　　">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -340,8 +342,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEp-ZB-A1E">
-                                <rect key="frame" x="20" y="293" width="280" height="48"/>
-                                <color key="backgroundColor" red="1" green="0.75271534463033452" blue="0.88030248675846223" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-17" y="335" width="355" height="95"/>
+                                <color key="backgroundColor" red="0.98363370798553862" green="1" blue="0.63631168841168373" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="今週の成果">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -349,23 +351,26 @@
                                     <segue destination="BiK-9p-Kzn" kind="modal" id="FJR-VP-H4O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMq-NY-3is">
-                                <rect key="frame" x="20" y="394" width="280" height="46"/>
-                                <color key="backgroundColor" red="0.79433115684235989" green="0.58239234858654609" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="　選択">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5xv-nE-vZd" kind="modal" id="Ytl-bl-KUu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peq-2G-tBa">
-                                <rect key="frame" x="254" y="495" width="30" height="30"/>
+                                <rect key="frame" x="266" y="524" width="30" height="30"/>
                                 <state key="normal" title="💀">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="reset" destination="bBe-BN-aVE" eventType="touchUpInside" id="XQ7-9M-URi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HOME2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="dEd-0q-FgG">
+                                <rect key="frame" x="43" y="0.0" width="233" height="67"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMq-NY-3is">
+                                <rect key="frame" x="-10" y="425" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.79433115684235989" green="0.58239234858654609" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="選択">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5xv-nE-vZd" kind="modal" id="Ytl-bl-KUu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,7 +472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qO9-rH-tPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="173"/>
+            <point key="canvasLocation" x="611" y="-251"/>
         </scene>
         <!--Karenda View Controller-->
         <scene sceneID="PDP-fX-4mj">
@@ -505,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVo-MQ-19M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="142"/>
+            <point key="canvasLocation" x="1487" y="-251"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hTd-MS-hYD">
@@ -559,6 +564,7 @@
     </scenes>
     <resources>
         <image name="2014-July.jpg" width="920" height="658"/>
+        <image name="HOME2.gif" width="437" height="143"/>
         <image name="haikei siro.jpg" width="640" height="480"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

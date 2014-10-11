@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-    
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +53,7 @@
     NSMutableArray *taskArry = [userDefaults objectForKey:@"yaruki_task"];
     NSLog(@"//%@",taskArry);
 }
+
 
 
 
