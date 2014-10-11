@@ -61,19 +61,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hp5-2a-5e0">
-                                <rect key="frame" x="11" y="20" width="298" height="534"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yTf-ws-U1R">
+                                <rect key="frame" x="-2" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.71170754849696549" green="0.99071269132653061" blue="0.66761715206902028" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63566148321588134" green="0.79731345663265307" blue="0.48014772089060082" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やる気スイッチ！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPW-7W-dir">
-                                <rect key="frame" x="66" y="38" width="238" height="55"/>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hp5-2a-5e0">
+                                <rect key="frame" x="11" y="20" width="298" height="534"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="backgroundColor" red="1" green="0.97238023395178863" blue="0.89760280761889466" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,7 +87,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ldp-vT-rgR">
                                 <rect key="frame" x="16" y="440" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.11791016684457847" green="0.88614078443877553" blue="0.50975832044569658" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.23140025879139814" green="0.68883529974489788" blue="0.27761974657444466" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="tintColor" red="0.0056301621472958892" green="0.039421237244897989" blue="0.02297653858164252" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="ホーム">
@@ -199,8 +199,19 @@
                                     <action selector="start" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1dD-8k-WLz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start2.gif" highlightedImage="start2.gif" id="8MZ-78-8ap">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start2.gif" highlightedImage="haikei siro.jpg" id="8MZ-78-8ap">
                                 <rect key="frame" x="34" y="122" width="249" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nNL-wx-aWA">
+                                <rect key="frame" x="54" y="171" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nNL-wx-aWA" id="ztM-mi-hot">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dai2.gif" id="FUx-cA-PT4">
+                                <rect key="frame" x="47" y="41" width="226" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -613,6 +624,8 @@
     <resources>
         <image name="2014-July.jpg" width="920" height="658"/>
         <image name="HOME2.gif" width="437" height="143"/>
+        <image name="dai2.gif" width="437" height="143"/>
+        <image name="haikei siro.jpg" width="640" height="480"/>
         <image name="start2.gif" width="555" height="555"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

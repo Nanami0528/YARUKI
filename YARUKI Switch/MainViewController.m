@@ -144,10 +144,10 @@
        } else {
           
            NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-           NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId +1];
+           NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
            [newDict addEntriesFromDictionary:oldDict];
            [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-           [taskArry replaceObjectAtIndex:taskId+1 withObject:newDict];
+           [taskArry replaceObjectAtIndex:taskId withObject:newDict];
            
            [defaults setObject:taskArry forKey:@"yaruki_task"];
            [defaults synchronize];
