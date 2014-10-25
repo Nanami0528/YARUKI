@@ -18,14 +18,13 @@
 		E9167A4219CD911C00678274 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9167A3119CD911C00678274 /* MainViewController.m */; };
 		E9167A4319CD911C00678274 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9167A3319CD911C00678274 /* secondViewController.m */; };
 		E9167A4419CD911C00678274 /* SeikaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9167A3519CD911C00678274 /* SeikaViewController.m */; };
-		E9167A4519CD911C00678274 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9167A3719CD911C00678274 /* TableViewController.m */; };
 		E9167A4619CD911C00678274 /* YARUKI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9167A3819CD911C00678274 /* YARUKI-Info.plist */; };
 		E9167A4A19CD915000678274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9167A4819CD915000678274 /* Main.storyboard */; };
-		E983925F19E92CA1005B9889 /* start2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983925E19E92CA1005B9889 /* start2.gif */; };
+		E96D2A6E19FB9A6C00EB1C24 /* start2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E96D2A6D19FB9A6C00EB1C24 /* start2.gif */; };
+		E96D2A7019FB9AA700EB1C24 /* stop2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E96D2A6F19FB9AA700EB1C24 /* stop2.gif */; };
 		E983926119E92F9F005B9889 /* botan3.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983926019E92F9F005B9889 /* botan3.gif */; };
 		E983926319E96ECD005B9889 /* dai1.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983926219E96ECD005B9889 /* dai1.gif */; };
 		E983926519E96F50005B9889 /* dai2.gif in Resources */ = {isa = PBXBuildFile; fileRef = E983926419E96F50005B9889 /* dai2.gif */; };
-		E9AD055F197A3A47001AD40A /* Karenda-ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */; };
 		E9BAB67019E8F47300E716C3 /* GauFontDonutShop.suit in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB66F19E8F47300E716C3 /* GauFontDonutShop.suit */; };
 		E9BAB67419E8FCD500E716C3 /* HOME.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67319E8FCD500E716C3 /* HOME.gif */; };
 		E9BAB67619E8FEB500E716C3 /* HOME'.gif in Resources */ = {isa = PBXBuildFile; fileRef = E9BAB67519E8FEB500E716C3 /* HOME'.gif */; };
@@ -68,17 +67,14 @@
 		E9167A3319CD911C00678274 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = secondViewController.m; path = "YARUKI Switch/secondViewController.m"; sourceTree = SOURCE_ROOT; };
 		E9167A3419CD911C00678274 /* SeikaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeikaViewController.h; path = "YARUKI Switch/SeikaViewController.h"; sourceTree = SOURCE_ROOT; };
 		E9167A3519CD911C00678274 /* SeikaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeikaViewController.m; path = "YARUKI Switch/SeikaViewController.m"; sourceTree = SOURCE_ROOT; };
-		E9167A3619CD911C00678274 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = "YARUKI Switch/TableViewController.h"; sourceTree = SOURCE_ROOT; };
-		E9167A3719CD911C00678274 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = "YARUKI Switch/TableViewController.m"; sourceTree = SOURCE_ROOT; };
 		E9167A3819CD911C00678274 /* YARUKI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "YARUKI-Info.plist"; path = "YARUKI Switch/YARUKI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E9167A3919CD911C00678274 /* YARUKI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YARUKI-Prefix.pch"; path = "YARUKI Switch/YARUKI-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		E9167A4919CD915000678274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "YARUKI Switch/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		E983925E19E92CA1005B9889 /* start2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start2.gif; sourceTree = "<group>"; };
+		E96D2A6D19FB9A6C00EB1C24 /* start2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start2.gif; sourceTree = "<group>"; };
+		E96D2A6F19FB9AA700EB1C24 /* stop2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stop2.gif; sourceTree = "<group>"; };
 		E983926019E92F9F005B9889 /* botan3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = botan3.gif; sourceTree = "<group>"; };
 		E983926219E96ECD005B9889 /* dai1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dai1.gif; sourceTree = "<group>"; };
 		E983926419E96F50005B9889 /* dai2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dai2.gif; sourceTree = "<group>"; };
-		E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Karenda-ViewController.h"; sourceTree = SOURCE_ROOT; };
-		E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Karenda-ViewController.m"; sourceTree = SOURCE_ROOT; };
 		E9BAB66F19E8F47300E716C3 /* GauFontDonutShop.suit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GauFontDonutShop.suit; sourceTree = "<group>"; };
 		E9BAB67319E8FCD500E716C3 /* HOME.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HOME.gif; sourceTree = "<group>"; };
 		E9BAB67519E8FEB500E716C3 /* HOME'.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "HOME'.gif"; sourceTree = "<group>"; };
@@ -131,10 +127,11 @@
 		E9C42BE11942FD18001CF2DC = {
 			isa = PBXGroup;
 			children = (
+				E96D2A6F19FB9AA700EB1C24 /* stop2.gif */,
+				E96D2A6D19FB9A6C00EB1C24 /* start2.gif */,
 				E983926419E96F50005B9889 /* dai2.gif */,
 				E983926219E96ECD005B9889 /* dai1.gif */,
 				E983926019E92F9F005B9889 /* botan3.gif */,
-				E983925E19E92CA1005B9889 /* start2.gif */,
 				E9BAB67719E9020B00E716C3 /* HOME2.gif */,
 				E9BAB67519E8FEB500E716C3 /* HOME'.gif */,
 				E9BAB67319E8FCD500E716C3 /* HOME.gif */,
@@ -184,10 +181,6 @@
 				E9167A3319CD911C00678274 /* secondViewController.m */,
 				E9167A3419CD911C00678274 /* SeikaViewController.h */,
 				E9167A3519CD911C00678274 /* SeikaViewController.m */,
-				E9167A3619CD911C00678274 /* TableViewController.h */,
-				E9167A3719CD911C00678274 /* TableViewController.m */,
-				E9AD055D197A3A47001AD40A /* Karenda-ViewController.h */,
-				E9AD055E197A3A47001AD40A /* Karenda-ViewController.m */,
 				E9C42BF41942FD18001CF2DC /* Supporting Files */,
 			);
 			name = "YARUKI Switch";
@@ -302,7 +295,6 @@
 				E983926319E96ECD005B9889 /* dai1.gif in Resources */,
 				E9167A4A19CD915000678274 /* Main.storyboard in Resources */,
 				E983926119E92F9F005B9889 /* botan3.gif in Resources */,
-				E983925F19E92CA1005B9889 /* start2.gif in Resources */,
 				E9BAB67019E8F47300E716C3 /* GauFontDonutShop.suit in Resources */,
 				E9167A3E19CD911C00678274 /* Images.xcassets in Resources */,
 				E9167A4619CD911C00678274 /* YARUKI-Info.plist in Resources */,
@@ -313,6 +305,8 @@
 				E9167A3A19CD911C00678274 /* 2014-July.jpg in Resources */,
 				E983926519E96F50005B9889 /* dai2.gif in Resources */,
 				E9167A3F19CD911C00678274 /* img-smp02_1.gif in Resources */,
+				E96D2A7019FB9AA700EB1C24 /* stop2.gif in Resources */,
+				E96D2A6E19FB9A6C00EB1C24 /* start2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9167A4019CD911C00678274 /* ListViewController.m in Sources */,
-				E9AD055F197A3A47001AD40A /* Karenda-ViewController.m in Sources */,
-				E9167A4519CD911C00678274 /* TableViewController.m in Sources */,
 				E9167A3B19CD911C00678274 /* AppDelegate.m in Sources */,
 				E9167A4419CD911C00678274 /* SeikaViewController.m in Sources */,
 				E9167A4319CD911C00678274 /* secondViewController.m in Sources */,

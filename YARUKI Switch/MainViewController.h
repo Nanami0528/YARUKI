@@ -29,6 +29,8 @@
     IBOutlet UILabel *taskNameLabel;
     
     
+    IBOutlet UIButton *mainbottan;
+    BOOL mainswich;
     
     
     

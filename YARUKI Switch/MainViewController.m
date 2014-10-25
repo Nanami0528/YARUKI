@@ -20,7 +20,8 @@
 @synthesize tagNum;
 - (void)viewDidLoad
 {
-  
+    
+    mainswich= 1;
     
     
     
@@ -111,55 +112,55 @@
                                                 repeats:YES
                  
                  ];
-    
+        
         [timer fire];
-   }else{//タイマーが動いていた場合
+    }else{//タイマーが動いていた場合
         [timer invalidate];//タイマーを止める
         //TODO: sec,min,hourを渡す
         NSLog(@"sec:%ld",sec);
+        bar.progress =(float) sec / yaruki_time;NSLog(@"yaruki_time: %.4f",bar.progress);
+        NSMutableArray *taskArry = [[NSMutableArray alloc] init];
+        //NSUserDefaultsにNSMutableArrayを保存すると、NSArray型になってしまう。
+        //なので、NSUserDefaultsに保存した配列をMutable(可変長)な形で取り出したいときは、取り出したオブジェクトにたいして「mutableCopy」メソッドを付け加えてあげないとMutableにならない。
+        taskArry = [[defaults objectForKey:@"yaruki_task"] mutableCopy];//
         
+        if (taskArry == nil) {
+            NSLog(@"タスクは存在しません");
+        } else {
+            
+            NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
+            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
+            [newDict addEntriesFromDictionary:oldDict];
+            [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
+            [taskArry replaceObjectAtIndex:taskId withObject:newDict];
+            
+            [defaults setObject:taskArry forKey:@"yaruki_task"];
+            [defaults synchronize];
+            
+            
+            
+            
+        }
+    }
+    if(mainswich==0){
+        UIImage *image2 = [UIImage imageNamed:@"start2.gif"];
+        [mainbottan setImage:image2 forState:UIControlStateNormal];
         
+        mainswich=1;
+        
+            }
     
-        bar.progress =(float) sec / yaruki_time;
-       //bar.progress =sec+min/60+hour/10*60/yaruki_time;
-    
-       
-       //NSLog(@"sec+min*60+hour*60*60: %ld",sec*+min*60+hour*60*60);
-       NSLog(@"yaruki_time: %.4f",bar.progress);
-       //NSLog(@"sec+min*60+hour*60*60/yaruki_time: %d",(sec+min*60+hour*60*60)/yaruki_time);
-       
-       
-       //NSLog(@"sec+min/60+hour/10*60:%d",sec+min/60+hour/10*60);
-      // NSLog(@"yaruki_time:%d",yaruki_time);
-       //NSLog(@"sec+min/60+hour/10*60/yaruki_time:%d",sec+min/60+hour/10*60/yaruki_time);
-       
-       
-       NSMutableArray *taskArry = [[NSMutableArray alloc] init];
-       //NSUserDefaultsにNSMutableArrayを保存すると、NSArray型になってしまう。
-       //なので、NSUserDefaultsに保存した配列をMutable(可変長)な形で取り出したいときは、取り出したオブジェクトにたいして「mutableCopy」メソッドを付け加えてあげないとMutableにならない。
-       taskArry = [[defaults objectForKey:@"yaruki_task"] mutableCopy];//
-       
-       if (taskArry == nil) {
-           NSLog(@"タスクは存在しません");
-       } else {
-          
-           NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-           NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
-           [newDict addEntriesFromDictionary:oldDict];
-           [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-           [taskArry replaceObjectAtIndex:taskId withObject:newDict];
-           
-           [defaults setObject:taskArry forKey:@"yaruki_task"];
-           [defaults synchronize];
+    if (mainswich==1) {
         
-           
-           
-           
-       }
-       
-       
-       　　　　　　　　　　　    }
+        
+        UIImage *image = [UIImage imageNamed:@"stop2.gif"];
+        [mainbottan setImage:image forState:UIControlStateNormal];
 
+        mainswich=0;
+      
+        
+    }
+    
     
     
     
@@ -167,7 +168,7 @@
 
 
 
-    
+
 -(void)up
 {
     NSLog(@"sec:%d",sec);
