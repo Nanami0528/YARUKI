@@ -20,11 +20,11 @@
 @synthesize tagNum;
 - (void)viewDidLoad
 {
-    
+    //ボタンのスイッチ
     mainswich= 1;
     
     
-    
+    //
     defaults = [NSUserDefaults standardUserDefaults];
 
     NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
@@ -143,18 +143,16 @@
         }
     }
     if(mainswich==0){
-        UIImage *image2 = [UIImage imageNamed:@"start2.gif"];
-        [mainbottan setImage:image2 forState:UIControlStateNormal];
+
+        [mainbottan setImage:[UIImage imageNamed:@"start2.gif"] forState:UIControlStateNormal];
         
         mainswich=1;
         
-            }
-    
-    if (mainswich==1) {
+    }else if (mainswich==1) {
         
         
-        UIImage *image = [UIImage imageNamed:@"stop2.gif"];
-        [mainbottan setImage:image forState:UIControlStateNormal];
+
+        [mainbottan setImage:[UIImage imageNamed:@"stop2.gif"] forState:UIControlStateNormal];
 
         mainswich=0;
       
