@@ -14,7 +14,7 @@
 
 @implementation secondViewController
 {
-    UIPickerView *picker;
+    IBOutlet UIPickerView *picker;
 }
 
 @synthesize taskNameField;
@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     
     defaults = [NSUserDefaults standardUserDefaults];
     
@@ -31,11 +32,10 @@
     backButton.layer.cornerRadius=10.0f;
     
     
-    
-    [super viewDidLoad];
-    
     // UIPickerのインスタンス化
-    picker = [[UIPickerView alloc]init];
+    picker = [[UIPickerView alloc] init];
+    
+    picker.frame = CGRectMake(0, 200, picker.frame.size.width, picker.frame.size.height);
     
     // デリゲートを設定
     picker.delegate = self;
@@ -170,7 +170,7 @@ numberOfRowsInComponent:(NSInteger)component
     
    //NSDictionary *taskDict= [NSDictionary dictionaryWithObjectsAndKeys:taskNameField.text, @"name", ★ [NSString stringWithFormat:@"%d", yaruki_select_time], @"selecttime", @"0", @"time",nil];
     
-     NSMutableDictionary *taskDict= [ NSMutableDictionary  dictionaryWithObjectsAndKeys:taskNameField.text, @"name",[NSString stringWithFormat:@"%d", yaruki_select_time], @"selecttime", @"0", @"time",nil];
+     NSMutableDictionary *taskDict= [NSMutableDictionary  dictionaryWithObjectsAndKeys:taskNameField.text, @"name",[NSString stringWithFormat:@"%ld", yaruki_select_time], @"selecttime", @"0", @"time",nil];
     
     
     NSLog(@"aaaaaaaaaaaa %@",[taskDict objectForKey:@"time"]);
@@ -204,8 +204,9 @@ numberOfRowsInComponent:(NSInteger)component
     //[defaults setObject:task forKey:taskId];
                            
     MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
-
-    mainVC.taskId = (int)[taskArray count] - 1;
+    
+    //FIXME:(int)[taskArray count] - 1;
+    mainVC.taskId = (int)[taskArray count];
     mainVC.tagNum = 2;
     [self presentViewController:mainVC animated:YES completion:nil];
     

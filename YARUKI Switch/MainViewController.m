@@ -18,13 +18,15 @@
 @synthesize taskName;
 @synthesize taskId;
 @synthesize tagNum;
+
+
 - (void)viewDidLoad
 {
-    //ボタンのスイッチ
+    
     mainswich= 1;
     
     
-    //
+    
     defaults = [NSUserDefaults standardUserDefaults];
 
     NSMutableArray *taskArry = [defaults objectForKey:@"yaruki_task"];
@@ -34,16 +36,16 @@
     } else {
         
         //NSDictionary                                                            ★
-        NSMutableDictionary*taskDict = [taskArry objectAtIndex:taskId];
+        NSMutableDictionary *taskDict = [taskArry objectAtIndex:taskId-1];
         NSString *stStr = [taskDict objectForKey:@"selecttime"];
         NSString *tStr = [taskDict objectForKey:@"time"];
         
         NSLog(@"時間　　%@ %@", stStr, tStr);
         long st = [stStr longLongValue];
         long t = [tStr longLongValue];
-        NSLog(@"%d",t);
+     
         yaruki_time = st-t;
-        NSLog(@"//////%d",self.yaruki_time);
+       
 
         
         
@@ -56,7 +58,7 @@
         }else if(tagNum==2){//SecondVCから
             
             sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
-            taskNameLabel.text = (NSString *)[taskArry.lastObject objectForKey:@"name"];
+            taskNameLabel.text = (NSString *)[taskArry[self.taskId-1] objectForKey:@"name"];
             NSLog(@"%ld",sec);
         }
         NSLog(@"%@",taskArry);
@@ -72,9 +74,9 @@
     //sec= 0.0;
     
     
-    minLabel.text = [NSString stringWithFormat:@"%2d",(sec%3600)/60] ;
-    secLabel.text = [NSString stringWithFormat:@"%2d",(sec%3600)%60] ;
-    hourLabel.text = [NSString stringWithFormat:@"%2d",sec/3600] ;
+    minLabel.text = [NSString stringWithFormat:@"%2ld",(sec%3600)/60] ;
+    secLabel.text = [NSString stringWithFormat:@"%2ld",(sec%3600)%60] ;
+    hourLabel.text = [NSString stringWithFormat:@"%2ld",sec/3600] ;
     
     bar.transform = CGAffineTransformMakeScale(1.0, 14.0);
     bar.progress =  0.0  ;//ここ←
@@ -184,35 +186,6 @@
     minLabel.text = [NSString stringWithFormat:@"%ld", minLabelNum];
     secLabel.text = [NSString stringWithFormat:@"%ld", secLabelNum];
     
-    /*
-    if(sec == 60){
-       
-        
-        
-        minLabel.text = [NSString stringWithFormat:@"%.2d",sec/60];
-
-         sec = sec-60;
-        
-        NSLog(@"min:%d",sec/60);
-    }
-    
-    if((sec%3600)/60 == 60){
-        
-        
-        hourLabel.text = [NSString stringWithFormat:@"%.2d",sec/60*60];
-        
-        
-        
-          NSLog(@"hour:%d",sec/60*60);
-        
-    }
-     */
-    
-        
-//    count =count + 0.01;
-//    time1.text = [NSString stringWithFormat:@"%.2d",count];
-  
-    
     
     long remainsec;
     remainsec=yaruki_time -   sec;
@@ -233,9 +206,6 @@
     } else {
         [self dismissViewControllerAnimated:YES completion:nil];
     }
-
-
-  //[self dismissViewControllerAnimated:YES completion:nil];
 
 }
 

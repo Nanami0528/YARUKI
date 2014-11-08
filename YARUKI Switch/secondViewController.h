@@ -17,7 +17,7 @@
     
     NSUserDefaults *defaults;
     IBOutlet UIButton *backButton;
-        IBOutlet UIButton *yarukiButton;
+    IBOutlet UIButton *yarukiButton;
 
 }
 

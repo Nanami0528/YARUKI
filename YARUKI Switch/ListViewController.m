@@ -65,14 +65,12 @@ numberOfRowsInSection:(NSInteger)section
         
     }
     UILabel *textlabel=(UILabel *)[cell viewWithTag:1];
-    //NSLog(@"cccccccc%@",taskArry);
-
-    //NSDictionaryここかえた                                ★
+    
     NSMutableDictionary*task = [taskArry objectAtIndex:[indexPath row]];
     NSLog(@"bbbbb%@",[task objectForKey:@"name"]);
     
     textlabel.text =[NSString stringWithFormat:@"%@",[task objectForKey:@"name"]];
-    //textlabel.text= [NSString stringWithFormat:@"%@",taskname];
+   
 
     
     
@@ -102,15 +100,5 @@ numberOfRowsInSection:(NSInteger)section
     
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
