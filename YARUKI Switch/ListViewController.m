@@ -95,7 +95,7 @@ numberOfRowsInSection:(NSInteger)section
     MainViewController *mainVC=[self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     
     mainVC.taskId = (int)[indexPath row];
-    mainVC.tagNum = 2;
+    mainVC.tagNum = 1;
     [self presentViewController:mainVC animated:YES completion:nil];
     
 }

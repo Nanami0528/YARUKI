@@ -33,10 +33,41 @@
     
     if (taskArry == nil) {
         NSLog(@"タスクは存在しません");
+    } else if ([taskArry count]==1) {
+        if(tagNum==1){//ListVCからの値の取り出し方
+            //NSDictionary                                                            ★
+            NSMutableDictionary *taskDict = [taskArry objectAtIndex:taskId];
+            NSString *stStr = [taskDict objectForKey:@"selecttime"];
+            NSString *tStr = [taskDict objectForKey:@"time"];
+            
+            NSLog(@"時間　　%@ %@ tag:%d", stStr, tStr, tagNum);
+            long st = [stStr longLongValue];
+            long t = [tStr longLongValue];
+            
+            yaruki_time = st-t;
+            sec = t;
+            taskNameLabel.text = (NSString *)[taskDict objectForKey:@"name"];
+            NSLog(@"%@",taskDict);
+        }else if(tagNum==2){//SecondVCから
+            //NSDictionary                                                            ★
+            NSMutableDictionary *taskDict = [taskArry objectAtIndex:taskId-1];
+            NSString *stStr = [taskDict objectForKey:@"selecttime"];
+            NSString *tStr = [taskDict objectForKey:@"time"];
+            
+            NSLog(@"時間　　%@ %@ tag:%d", stStr, tStr, tagNum);
+            long st = [stStr longLongValue];
+            long t = [tStr longLongValue];
+            
+            yaruki_time = st-t;
+            sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
+            taskNameLabel.text = (NSString *)[taskArry[self.taskId-1] objectForKey:@"name"];
+            NSLog(@"%ld",sec);
+        }
+    
     } else {
         
         //NSDictionary                                                            ★
-        NSMutableDictionary *taskDict = [taskArry objectAtIndex:taskId-1];
+        NSMutableDictionary *taskDict = [taskArry objectAtIndex:taskId];
         NSString *stStr = [taskDict objectForKey:@"selecttime"];
         NSString *tStr = [taskDict objectForKey:@"time"];
         
@@ -45,12 +76,6 @@
         long t = [tStr longLongValue];
      
         yaruki_time = st-t;
-       
-
-        
-        
-       
-        
         if(tagNum==1){//ListVCからの値の取り出し方
             sec = t;
             taskNameLabel.text = (NSString *)[taskDict objectForKey:@"name"];
@@ -58,7 +83,7 @@
         }else if(tagNum==2){//SecondVCから
             
             sec = [[taskArry.lastObject objectForKey:@"time"] longLongValue];
-            taskNameLabel.text = (NSString *)[taskArry[self.taskId-1] objectForKey:@"name"];
+            taskNameLabel.text = (NSString *)[taskArry[self.taskId] objectForKey:@"name"];
             NSLog(@"%ld",sec);
         }
         NSLog(@"%@",taskArry);
@@ -131,17 +156,13 @@
         } else {
             
             NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
+            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId-1];
             [newDict addEntriesFromDictionary:oldDict];
             [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-            [taskArry replaceObjectAtIndex:taskId withObject:newDict];
+            [taskArry replaceObjectAtIndex:taskId-1 withObject:newDict];
             
             [defaults setObject:taskArry forKey:@"yaruki_task"];
             [defaults synchronize];
-            
-            
-            
-            
         }
     }
     if(mainswich==0){
