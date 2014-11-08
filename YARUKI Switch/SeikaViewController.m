@@ -76,7 +76,7 @@
     
     
     //１番最後の配列の中身
-    NSDictionary *dic = taskArry [[taskArry count] - 1];
+    NSDictionary *dic = taskArry [[taskArry count] - 5];
     NSString *tStr = dic[@"time"];
     long time = [tStr longLongValue];
     
@@ -87,7 +87,7 @@
     
     
     //最後から２番目配列の中身
-    NSDictionary *dic2 = taskArry [[taskArry count] - 2];
+    NSDictionary *dic2 = taskArry [[taskArry count] - 4];
     NSString *tStr2 = dic2[@"time"];
     long time2 = [tStr2 longLongValue];
     
@@ -107,7 +107,7 @@
     tasknameLabel3.text =[dic3 objectForKey:@"name"];
     
     //最後から４番目
-    NSDictionary *dic4 = taskArry [[taskArry count] - 4];
+    NSDictionary *dic4 = taskArry [[taskArry count] - 2];
     NSString *stStr4 = dic4[@"time"];
     long time4 = [stStr4 longLongValue];
     
@@ -117,7 +117,7 @@
     tasknameLabel4.text =[dic4 objectForKey:@"name"];
     
     //最後から５番目
-    NSDictionary *dic5 = taskArry [[taskArry count] - 5];
+    NSDictionary *dic5 = taskArry [[taskArry count] - 1];
     NSString *stStr5 = dic5[@"time"];
     long time5 = [stStr5 longLongValue];
     
