@@ -116,7 +116,7 @@
     hourremaining.text = [NSString stringWithFormat:@"%.1ld",yaruki_time/3600];
     
     
-    
+    NSLog(@":%@",taskArry);
 }
 
 
@@ -145,6 +145,11 @@
         [timer invalidate];//タイマーを止める
         //TODO: sec,min,hourを渡す
         NSLog(@"sec:%ld",sec);
+        
+        
+        
+        
+        
         bar.progress =(float) sec / yaruki_time;NSLog(@"yaruki_time: %.4f",bar.progress);
         NSMutableArray *taskArry = [[NSMutableArray alloc] init];
         //NSUserDefaultsにNSMutableArrayを保存すると、NSArray型になってしまう。
@@ -156,10 +161,11 @@
         } else {
             
             NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId-1];
+            NSLog(@":taskArray%@ \n:taskId%d", taskArry, taskId);
+            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
             [newDict addEntriesFromDictionary:oldDict];
             [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-            [taskArry replaceObjectAtIndex:taskId-1 withObject:newDict];
+            [taskArry replaceObjectAtIndex:taskId withObject:newDict];
             
             [defaults setObject:taskArry forKey:@"yaruki_task"];
             [defaults synchronize];
