@@ -32,10 +32,10 @@
     
     
     
-    firstbar.transform = CGAffineTransformMakeScale(1.0, 14.0);
-    firstbar.progress = 0.0  ;//ここ←
-    firstbar.progressTintColor = [UIColor colorWithRed:0.0 green:0.94 blue:0.38 alpha:0.4];
-    firstbar.trackTintColor = [UIColor colorWithRed:0.0 green:0.40 blue:0.19 alpha:0.2];
+    bar.transform = CGAffineTransformMakeScale(1.0, 14.0);
+    bar.progress = 0.0  ;//ここ←
+    bar.progressTintColor = [UIColor colorWithRed:0.0 green:0.94 blue:0.38 alpha:0.4];
+    bar.trackTintColor = [UIColor colorWithRed:0.0 green:0.40 blue:0.19 alpha:0.2];
     
     bar2.transform = CGAffineTransformMakeScale(1.0, 14.0);
     bar2.progress =  0.0  ;
@@ -72,68 +72,188 @@
     
     
     
-
     
     
-    //１番最後の配列の中身
-    NSDictionary *dic = taskArry [[taskArry count] - 5];
-    NSString *tStr = dic[@"time"];
-    long time = [tStr longLongValue];
     
-    NSString *stStr= dic[@"selecttime"];
-    long selecttime = [stStr longLongValue];
-    firstbar.progress = (float)time/selecttime;
-    tasknameLabel.text =[dic objectForKey:@"name"];
-    
-    
-    //最後から２番目配列の中身
-    NSDictionary *dic2 = taskArry [[taskArry count] - 4];
-    NSString *tStr2 = dic2[@"time"];
-    long time2 = [tStr2 longLongValue];
-    
-    NSString *stStr2= dic2[@"selecttime"];
-    long selecttime2 = [stStr2 longLongValue];
-    bar2.progress = (float)time2/selecttime2;
-    tasknameLabel2.text =[dic2 objectForKey:@"name"];
-
-    //最後から３番目
-    NSDictionary *dic3 = taskArry [[taskArry count] - 3];
-    NSString *stStr3 = dic3[@"time"];
-    long time3 = [stStr3 longLongValue];
-    
-    NSString *tStr3= dic3[@"selecttime"];
-    long selecttime3 = [tStr3 longLongValue];
-    bar3.progress = (float)time3/selecttime3;
-    tasknameLabel3.text =[dic3 objectForKey:@"name"];
-    
-    //最後から４番目
-    NSDictionary *dic4 = taskArry [[taskArry count] - 2];
-    NSString *stStr4 = dic4[@"time"];
-    long time4 = [stStr4 longLongValue];
-    
-    NSString *tStr4= dic4[@"selecttime"];
-    long selecttime4 = [tStr4 longLongValue];
-    bar4.progress = (float)time4/selecttime4;
-    tasknameLabel4.text =[dic4 objectForKey:@"name"];
-    
-    //最後から５番目
-    NSDictionary *dic5 = taskArry [[taskArry count] - 1];
-    NSString *stStr5 = dic5[@"time"];
-    long time5 = [stStr5 longLongValue];
-    
-    NSString *tStr5= dic[@"selecttime"];
-    long selecttime5 = [tStr5 longLongValue];
-    bar5.progress = (float)time5/selecttime5;
-    tasknameLabel5.text =[dic5 objectForKey:@"name"];
-
-    
-    
-//   tasknameLabel2.text =[dic objectForKey:@"name"];
-//   tasknameLabel3.text =[dic objectForKey:@"name"];
-//   tasknameLabel4.text =[dic objectForKey:@"name"];
-//   tasknameLabel5.text =[dic objectForKey:@"name"];
-
-    
+    if([taskArry count]==0){
+        bar5.progress = 0;
+        bar4.progress = 0;
+        bar3.progress = 0;
+        bar2.progress = 0;
+        bar.progress = 0;
+        
+    }else if ([taskArry count]==1){
+        //taskが1個の時
+        bar5.progress = 0;
+        bar4.progress = 0;
+        bar3.progress = 0;
+        bar2.progress = 0;
+        //１番最後の配列の中身
+        NSDictionary *dic = taskArry [0];
+        NSString *tStr = dic[@"time"];
+        long time = [tStr longLongValue];
+        
+        NSString *stStr= dic[@"selecttime"];
+        long selecttime = [stStr longLongValue];
+        bar.progress = (float)time/selecttime;
+        tasknameLabel.text =[dic objectForKey:@"name"];
+    }else if ([taskArry count]==2) {
+        //taskが2個の時
+        bar5.progress = 0;
+        bar4.progress = 0;
+        bar3.progress = 0;
+        //１番最後の配列の中身
+        NSDictionary *dic = taskArry [0];
+        NSString *tStr = dic[@"time"];
+        long time = [tStr longLongValue];
+        
+        NSString *stStr= dic[@"selecttime"];
+        long selecttime = [stStr longLongValue];
+        bar.progress = (float)time/selecttime;
+        tasknameLabel.text =[dic objectForKey:@"name"];
+        
+        
+        //最後から２番目配列の中身
+        NSDictionary *dic2 = taskArry [1];
+        NSString *tStr2 = dic2[@"time"];
+        long time2 = [tStr2 longLongValue];
+        
+        NSString *stStr2= dic2[@"selecttime"];
+        long selecttime2 = [stStr2 longLongValue];
+        bar2.progress = (float)time2/selecttime2;
+        tasknameLabel2.text =[dic2 objectForKey:@"name"];
+    }else if ([taskArry count]==3){
+        //taskが3個の時
+        bar5.progress = 0;
+        bar4.progress = 0;
+        //１番最後の配列の中身
+        NSDictionary *dic = taskArry [0];
+        NSString *tStr = dic[@"time"];
+        long time = [tStr longLongValue];
+        
+        NSString *stStr= dic[@"selecttime"];
+        long selecttime = [stStr longLongValue];
+        bar.progress = (float)time/selecttime;
+        tasknameLabel.text =[dic objectForKey:@"name"];
+        
+        
+        //最後から２番目配列の中身
+        NSDictionary *dic2 = taskArry [1];
+        NSString *tStr2 = dic2[@"time"];
+        long time2 = [tStr2 longLongValue];
+        
+        NSString *stStr2= dic2[@"selecttime"];
+        long selecttime2 = [stStr2 longLongValue];
+        bar2.progress = (float)time2/selecttime2;
+        tasknameLabel2.text =[dic2 objectForKey:@"name"];
+        
+        //最後から３番目
+        NSDictionary *dic3 = taskArry [02];
+        NSString *stStr3 = dic3[@"time"];
+        long time3 = [stStr3 longLongValue];
+        
+        NSString *tStr3= dic3[@"selecttime"];
+        long selecttime3 = [tStr3 longLongValue];
+        bar3.progress = (float)time3/selecttime3;
+        tasknameLabel3.text =[dic3 objectForKey:@"name"];
+    }else if ([taskArry count]==4) {
+        
+        //taskが4個の時
+        bar5.progress = 0;
+        //１番最後の配列の中身
+        NSDictionary *dic = taskArry [0];
+        NSString *tStr = dic[@"time"];
+        long time = [tStr longLongValue];
+        
+        NSString *stStr= dic[@"selecttime"];
+        long selecttime = [stStr longLongValue];
+        bar.progress = (float)time/selecttime;
+        tasknameLabel.text =[dic objectForKey:@"name"];
+        
+        
+        //最後から２番目配列の中身
+        NSDictionary *dic2 = taskArry [1];
+        NSString *tStr2 = dic2[@"time"];
+        long time2 = [tStr2 longLongValue];
+        
+        NSString *stStr2= dic2[@"selecttime"];
+        long selecttime2 = [stStr2 longLongValue];
+        bar2.progress = (float)time2/selecttime2;
+        tasknameLabel2.text =[dic2 objectForKey:@"name"];
+        
+        //最後から３番目
+        NSDictionary *dic3 = taskArry [2];
+        NSString *stStr3 = dic3[@"time"];
+        long time3 = [stStr3 longLongValue];
+        
+        NSString *tStr3= dic3[@"selecttime"];
+        long selecttime3 = [tStr3 longLongValue];
+        bar3.progress = (float)time3/selecttime3;
+        tasknameLabel3.text =[dic3 objectForKey:@"name"];
+        
+        //最後から４番目
+        NSDictionary *dic4 = taskArry [3];
+        NSString *stStr4 = dic4[@"time"];
+        long time4 = [stStr4 longLongValue];
+        
+        NSString *tStr4= dic4[@"selecttime"];
+        long selecttime4 = [tStr4 longLongValue];
+        bar4.progress = (float)time4/selecttime4;
+        tasknameLabel4.text =[dic4 objectForKey:@"name"];
+        
+    }else {
+        //１番最後の配列の中身
+        NSDictionary *dic = taskArry [[taskArry count] - 5];
+        NSString *tStr = dic[@"time"];
+        long time = [tStr longLongValue];
+        
+        NSString *stStr= dic[@"selecttime"];
+        long selecttime = [stStr longLongValue];
+        bar.progress = (float)time/selecttime;
+        tasknameLabel.text =[dic objectForKey:@"name"];
+        
+        
+        //最後から２番目配列の中身
+        NSDictionary *dic2 = taskArry [[taskArry count] - 4];
+        NSString *tStr2 = dic2[@"time"];
+        long time2 = [tStr2 longLongValue];
+        
+        NSString *stStr2= dic2[@"selecttime"];
+        long selecttime2 = [stStr2 longLongValue];
+        bar2.progress = (float)time2/selecttime2;
+        tasknameLabel2.text =[dic2 objectForKey:@"name"];
+        
+        //最後から３番目
+        NSDictionary *dic3 = taskArry [[taskArry count] - 3];
+        NSString *stStr3 = dic3[@"time"];
+        long time3 = [stStr3 longLongValue];
+        
+        NSString *tStr3= dic3[@"selecttime"];
+        long selecttime3 = [tStr3 longLongValue];
+        bar3.progress = (float)time3/selecttime3;
+        tasknameLabel3.text =[dic3 objectForKey:@"name"];
+        
+        //最後から４番目
+        NSDictionary *dic4 = taskArry [[taskArry count] - 2];
+        NSString *stStr4 = dic4[@"time"];
+        long time4 = [stStr4 longLongValue];
+        
+        NSString *tStr4= dic4[@"selecttime"];
+        long selecttime4 = [tStr4 longLongValue];
+        bar4.progress = (float)time4/selecttime4;
+        tasknameLabel4.text =[dic4 objectForKey:@"name"];
+        
+        //最後から５番目
+        NSDictionary *dic5 = taskArry [[taskArry count] - 1];
+        NSString *stStr5 = dic5[@"time"];
+        long time5 = [stStr5 longLongValue];
+        
+        NSString *tStr5= dic[@"selecttime"];
+        long selecttime5 = [tStr5 longLongValue];
+        bar5.progress = (float)time5/selecttime5;
+        tasknameLabel5.text =[dic5 objectForKey:@"name"];
+    }
+    NSLog(@"%d",[taskArry count]);
 }
 
 

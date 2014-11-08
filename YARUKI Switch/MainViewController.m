@@ -159,13 +159,23 @@
         if (taskArry == nil) {
             NSLog(@"タスクは存在しません");
         } else {
-            
+            NSDictionary *oldDict;
             NSMutableDictionary *newDict = [[NSMutableDictionary alloc] init];
-            NSLog(@":taskArray%@ \n:taskId%d", taskArry, taskId);
-            NSDictionary *oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
-            [newDict addEntriesFromDictionary:oldDict];
-            [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
-            [taskArry replaceObjectAtIndex:taskId withObject:newDict];
+            if([taskArry count]==1 && taskId==1){
+                
+                NSLog(@":taskArray%@ \n:taskId%d", taskArry, taskId-1);
+                oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId-1];
+                [newDict addEntriesFromDictionary:oldDict];
+                [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
+                [taskArry replaceObjectAtIndex:taskId-1 withObject:newDict];
+            }else{
+                NSLog(@":taskArray%@ \n:taskId%d", taskArry, taskId);
+                oldDict = (NSDictionary *)[taskArry objectAtIndex:taskId];
+                [newDict addEntriesFromDictionary:oldDict];
+                [newDict setObject:[NSString stringWithFormat:@"%ld", sec] forKey:@"time"];
+                [taskArry replaceObjectAtIndex:taskId withObject:newDict];
+            }
+
             
             [defaults setObject:taskArry forKey:@"yaruki_task"];
             [defaults synchronize];

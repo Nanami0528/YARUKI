@@ -10,7 +10,7 @@
 
 @interface SeikaViewController : UIViewController
 {
-   IBOutlet UIProgressView *firstbar;
+   IBOutlet UIProgressView *bar;
    IBOutlet UIProgressView *bar2;
    IBOutlet UIProgressView *bar3;
    IBOutlet UIProgressView *bar4;
