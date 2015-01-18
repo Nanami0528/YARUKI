@@ -17,7 +17,7 @@
 
 
 
--(IBAction)reset;
+-(IBAction)reset;// ALL削除
 
 
 @end

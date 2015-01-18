@@ -47,6 +47,8 @@
 }
 */
 
+
+//ALL削除
 -(IBAction)reset{
     NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];

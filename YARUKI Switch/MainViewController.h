@@ -15,20 +15,21 @@
     
     
     
-   
+    //現在進んだ時間
+    IBOutlet UILabel *secLabel;//　秒
+    IBOutlet UILabel *minLabel;//　分
+    IBOutlet UILabel *hourLabel;//　時間
     
-    IBOutlet UILabel *minLabel;
-    IBOutlet UILabel *secLabel;
-    IBOutlet UILabel *hourLabel;
-    IBOutlet UIProgressView *bar;
+    IBOutlet UIProgressView *bar;//あと何時間かのグラフ
     
-    IBOutlet UILabel  * secremaining;
-    IBOutlet UILabel  * minremaining;
-    IBOutlet UILabel  * hourremaining;
+    //残り時間
+    IBOutlet UILabel  * secremaining;//　秒
+    IBOutlet UILabel  * minremaining;//　分
+    IBOutlet UILabel  * hourremaining;//　時間
     
-    IBOutlet UILabel *taskNameLabel;
+    IBOutlet UILabel *taskNameLabel;//教科名
     
-    
+    //YARUKIスイッチ
     IBOutlet UIButton *mainbottan;
     BOOL mainswich;
     
