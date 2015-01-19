@@ -10,6 +10,8 @@
 
 @interface SeikaViewController : UIViewController
 {
+    
+   //成果のグラフ
    IBOutlet UIProgressView *bar;
    IBOutlet UIProgressView *bar2;
    IBOutlet UIProgressView *bar3;
@@ -26,15 +28,11 @@
     
     NSUserDefaults *defaults;
     
-    
+    //成果のラベル
     IBOutlet UILabel  * tasknameLabel;
-    
     IBOutlet UILabel  * tasknameLabel2;
-    
     IBOutlet UILabel  * tasknameLabel3;
- 
     IBOutlet UILabel  * tasknameLabel4;
-
     IBOutlet UILabel  * tasknameLabel5;
     
     

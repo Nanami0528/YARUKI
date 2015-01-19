@@ -31,9 +31,9 @@
     
     
     
-    
+    //成果のグラフの色、長さなど
     bar.transform = CGAffineTransformMakeScale(1.0, 14.0);
-    bar.progress = 0.0  ;//ここ←
+    bar.progress = 0.0  ;
     bar.progressTintColor = [UIColor colorWithRed:0.0 green:0.94 blue:0.38 alpha:0.4];
     bar.trackTintColor = [UIColor colorWithRed:0.0 green:0.40 blue:0.19 alpha:0.2];
     

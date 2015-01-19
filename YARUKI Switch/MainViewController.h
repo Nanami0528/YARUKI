@@ -10,7 +10,7 @@
 
 @interface MainViewController : UIViewController
 {
-  
+  　//↓これは何？
     long sec;
     
     

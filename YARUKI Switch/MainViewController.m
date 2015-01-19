@@ -99,20 +99,21 @@
     //sec= 0.0;
     
     
+    
+    //現在進んだ時間
     minLabel.text = [NSString stringWithFormat:@"%2ld",(sec%3600)/60] ;
     secLabel.text = [NSString stringWithFormat:@"%2ld",(sec%3600)%60] ;
     hourLabel.text = [NSString stringWithFormat:@"%2ld",sec/3600] ;
     
+    //あと何時間かのグラフ
     bar.transform = CGAffineTransformMakeScale(1.0, 14.0);
-    bar.progress =  0.0  ;//ここ←
+    bar.progress =  0.0  ;
     bar.progressTintColor = [UIColor colorWithRed:0.0 green:0.94 blue:0.38 alpha:0.4];
     bar.trackTintColor = [UIColor colorWithRed:0.0 green:0.40 blue:0.19 alpha:0.2];
     
-    
+    //残り時間
     secremaining.text = [NSString stringWithFormat:@"%.1ld",(yaruki_time%3600)%60];
-    
     minremaining.text = [NSString stringWithFormat:@"%.1ld",(yaruki_time%3600)/60];
-    
     hourremaining.text = [NSString stringWithFormat:@"%.1ld",yaruki_time/3600];
     
     
@@ -127,7 +128,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//MainのYARUKIスイッチのタイマー
 -(IBAction)start
 {
     if (![timer isValid] )//タイマーが動いていない場合
@@ -145,8 +146,6 @@
         [timer invalidate];//タイマーを止める
         //TODO: sec,min,hourを渡す
         NSLog(@"sec:%ld",sec);
-        
-        
         
         
         
@@ -181,6 +180,8 @@
             [defaults synchronize];
         }
     }
+    
+    //YARUKIスイッチの画像変換
     if(mainswich==0){
 
         [mainbottan setImage:[UIImage imageNamed:@"start2.gif"] forState:UIControlStateNormal];
